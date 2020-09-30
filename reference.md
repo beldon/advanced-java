@@ -1,1 +1,2 @@
 - [中文技术文档的写作规范](https://github.com/ruanyf/document-style-guide), by:阮一峰
+- [这三年被分布式坑惨了，曝光十大坑](https://www.cnblogs.com/jackson0714/p/fenbushi.html)
