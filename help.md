@@ -22,3 +22,24 @@ Dev!
 Ops!
 
 <!-- tabs:end -->
+
+## plantuml
+[plantuml](https://plantuml.com/)
+
+```plantuml
+@startuml
+Alice -> Bob: Authentication Request
+Bob --> Alice: Authentication Response
+
+Alice -> Bob: Another authentication Request
+Alice <-- Bob: another authentication Response
+@enduml
+```
+## mermaid
+
+```mermaid
+graph LR
+    A --- B
+    B-->C[fa:fa-ban forbidden]
+    B-->D(fa:fa-spinner);
+```
