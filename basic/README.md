@@ -1,8 +1,10 @@
-## Java Basic
 
 - 面向对象
 	- 封装、继承、多态 
 - 常用集合
+	- List
+	- Map
+	- Set
 - 原生数据类型
 	- Number
 	- String 
