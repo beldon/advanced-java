@@ -1,2 +1,7 @@
 * [Java基础](/basic/README "Java基础")
+* [Java进阶](/advanced/README "Java进阶")
+* [微服务](/microservices/README "微服务")
+* [Redis](/redis/README "Redis")
+* [MySql](/mysql/README "Mysql")
+* [工具](/tools/README "Tools")
 * [Help](/help "Help")
