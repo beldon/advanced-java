@@ -45,3 +45,8 @@ graph LR
     B-->C[fa:fa-ban forbidden]
     B-->D(fa:fa-spinner);
 ```
+
+
+## emojo表情
+😃
+[emojixd](https://emojixd.com/)
