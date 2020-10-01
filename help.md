@@ -37,6 +37,8 @@ Alice <-- Bob: another authentication Response
 ```
 ## mermaid
 
+[mermaid](https://mermaid-js.github.io/mermaid/diagrams-and-syntax-and-examples/examples.html)
+
 ```mermaid
 graph LR
     A --- B
