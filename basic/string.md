@@ -128,7 +128,7 @@ package "内存图" {
 需要注意的是，在 Object 对象， equals() 是用来比较内存地址的，相当于 **==** 比较，但是 String 重写了 equals 方法，用来比较内容时，即使内存地址不一致，只要内容一直，都是返回true。
 
 > [!DANGER]
-> **做字符串对比时用 equals 避免使用 ==**
+> **做字符串对比时用 equals， 避免使用 ==**
 
 
 ## String 、StringBuilder、StringBuffer
