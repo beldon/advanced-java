@@ -15,5 +15,3 @@
 * [🍁参考](/reference "参考")
 * [🍀Help](/help "Help")
 
-- **Links**
-- [![Github](/static/img/github.svg)Github](https://github.com/beldon/advanced-java)
