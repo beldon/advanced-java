@@ -1,3 +1,8 @@
+> [!TIP]
+> - 线程之间的threadLocal变量是互不影响的
+> - 使用private final static进行修饰，防止多实例时内存的泄露问题
+> - 线程池环境下使用后将threadLocal变量remove掉或设置成一个初始值
+
 ## 描述
 
 ThreadLocal，很多地方叫做线程本地变量，也有些地方叫做线程本地存储。ThreadLocal为变量在每个线程中都创建了一个副本，那么每个线程可以访问自己内部的副本变量。通常使用静态的变量来维护 **ThreadLocal** 如:
