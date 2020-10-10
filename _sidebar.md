@@ -5,6 +5,7 @@
   * [值传递 or 引用传递](/basic/pass-by-value "值传递 or 引用传递")
   * [注解](/basic/annotation "注解")
   * [反射](/basic/reflection "反射")
+  * [不定长参数](/basic/varargs "不定长参数")
 * [🌲Java进阶](/advanced/README "Java进阶")
   * [引用](/advanced/reference "引用")
   * [深入ThrealLocal](/advanced/thread-local "深入ThrealLocal")
