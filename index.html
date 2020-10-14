@@ -21,6 +21,10 @@
   <script src="https://cdn.jsdelivr.net/npm/docsify-edit-on-github@1.0.3/index.min.js"></script>
 
   <script>
+	let {protocol,host} = document.location;
+	console.log(protocol)
+	console.log(host)
+	let basePath = protocol+"//"+host;
     window.$docsify = {
       name: '🍀Java 进阶笔记',
       repo: 'https://github.com/beldon/advanced-java',
@@ -64,7 +68,12 @@
 	    pre: '<hr/>',
 	    style: 'text-align: right;',
 	    class: 'className',
-	  }
+	  },
+	   mustache: {
+	      data: {
+			  basePath:basePath
+		  }
+	   }
     }
    </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
@@ -95,6 +104,9 @@
   <script src="//unpkg.com/mermaid/dist/mermaid.js"></script>
   <script src="//unpkg.com/docsify-mermaid@latest/dist/docsify-mermaid.js" /> 
   <script>mermaid.initialize({ startOnLoad: true });</script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify-mustache"></script>
+
   <!-- <script src="//unpkg.com/docsify-plugin-flexible-alerts"></script> -->
   <!--  <script>
       if (typeof navigator.serviceWorker !== 'undefined') {

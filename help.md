@@ -50,3 +50,16 @@ graph LR
 ## emojo表情
 😃
 [emojixd](https://emojixd.com/)
+
+## mustache
+
+[mustache](https://docsify-mustache.github.io/#/?id=docsify-mustache)
+
+可以选择添加
+
+```
+<script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/front-matter.min.js"></script>
+```
+
+{{basePath}}
+
