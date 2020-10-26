@@ -3,3 +3,8 @@ Mysql
 - Mysql 事务隔离级别及 MVCC 机制
 - Mysql explain 工具
 - 索引及查询优化
+- 回表
+- 索引下推
+- 锁
+
+[Mysql性能优化：什么是索引下推？](https://www.cnblogs.com/Chenjiabing/p/12600926.html)
