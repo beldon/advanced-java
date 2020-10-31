@@ -18,6 +18,7 @@
 * [🌾Redis](/redis/README "Redis")
   * [Redis基础](/redis/basic "Redis基础")
   * [Redis 淘汰策略（Redis Eviction policies）](/redis/eviction-policies "Redis 淘汰策略（Redis Eviction policies）")
+  * [pipelining](/redis/pipelining "pipelining")
   * [分布式锁](/redis/distributed-locks "分布式锁")
 * [🌷MySql](/mysql/README "Mysql")
 * [🌹日志](/log/README "日志")
