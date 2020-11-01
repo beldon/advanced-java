@@ -22,9 +22,14 @@
 
 - 测试工具
 
-• jcstress
-Jcstress 全称 Java Concurrency Stress，是一种并发压力测试工具，可以帮助研究JVM、java类库和硬件中并发的正确性。
-• Lamench3
+- jcstress 
+
+Jcstress 全称 Java Concurrency Stress，是一种并发压力测试工具，可以帮助研究JVM、java类库和硬件中并发的正确性
+
+- Lamench3 
+
 可以测量上下文切换的时长
-• vmstat
+
+- vmstat
+
 可以测量上下文切换次数
