@@ -41,6 +41,8 @@
         scan  异步的  有重复
 ```
 
+[Redis data types](https://redis.io/topics/data-types-intro)
+
 ## 最大缓存设置
 
 在 Redis 中，允许用户设置的最大使用内存是 512G。
