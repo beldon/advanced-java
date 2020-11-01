@@ -14,6 +14,18 @@
 
 
 
+### Stream
+
+Redis Stream 是 Redis 5.0 版本新增加的数据结构，提供了消息的持久化和主备复制功能，可以让任何客户端访问任何时刻的数据，并且能记住每一个客户端的访问位置，还能保证消息不丢失。
+
+
+
+参考链接：
+
+- [Redis Stream](https://www.runoob.com/redis/redis-stream.html)
+
+- [Introduction to Redis streams](https://redis.io/topics/streams-intro)
+
 ### GEO
 
 GEO 主要用于存储地理位置信息，并对存储的信息进行操作，该功能在 Redis 3.2 版本新增。
