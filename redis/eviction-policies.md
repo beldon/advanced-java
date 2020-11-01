@@ -1,5 +1,5 @@
 
-淘汰策略（Redis Eviction policies）
+Brew淘汰策略（Redis Eviction policies）
 
 > [!WARNING]
 > 当内存不足时，Redis 会根据配置配置的缓存策略淘汰部分的 keys，以保证写入成功。
