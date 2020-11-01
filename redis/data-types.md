@@ -85,6 +85,32 @@ A HyperLogLog is a probabilistic data structure used in order to count unique th
 | PFCOUNT key [key ...]                     | 返回给定 HyperLogLog 的基数估算值。       |
 | PFMERGE destkey sourcekey [sourcekey ...] | 将多个 HyperLogLog 合并为一个 HyperLogLog |
 
+### Bitmap
+
+命令
+
+- setbit key offset value
+- getbit key offset
+- bitcount key [start] [end]
+- bitpos
+- bitop operation destkey key [key ...]
+	- operation` 可以是 `AND` 、 `OR` 、 `NOT` 、 `XOR` 这四种操作中的任意一种：
+	- `　　BITOP AND destkey key [key ...]` ，对一个或多个 `key` 求逻辑并，并将结果保存到 `destkey` 。 
+	- `　　BITOP OR destkey key [key ...]` ，对一个或多个 `key` 求逻辑或，并将结果保存到 `destkey` 。
+	- `　　BITOP XOR destkey key [key ...]` ，对一个或多个 `key` 求逻辑异或，并将结果保存到 `destkey` 。
+	- `　　BITOP NOT destkey key` ，对给定 `key` 求逻辑非，并将结果保存到 `destkey` 。
+
+除了 `NOT` 操作之外，其他操作都可以接受一个或多个 `key` 作为输入。　　　　
+
+返回值：保存到 `destkey` 的字符串的长度，和输入 `key` 中最长的字符串长度相等
+
+- bitfield
+
+应用场景
+
+- 位图计数统计
+- 日活跃用户数
+
 ## 参考链接
 
 - [Data types short summary](https://redis.io/topics/data-types)

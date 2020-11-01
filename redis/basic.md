@@ -13,7 +13,7 @@
         hmset key field value [field value …] 同时将多个 field-value (域-值)对设置到哈希表 key 中。
         hget hash field  返回哈希表中给定域的值。
         hgetall key      返回哈希表 key 中，所有的域和值。
- 队列(queue):
+å队列(queue):
         lpush key value [value …] 将一个或多个值 value 插入到列表 key 的表头
         lpop key   移除并返回列表 key 的头元素,不存在返回nil
         lset key index value  将列表 key 下标为 index 的元素的值设置为 value 。
