@@ -59,7 +59,7 @@
 ```
 
 > [!WARNING]
-> - persist 命令可以删除任意类型键的过期时间，但是 set 命令也会删除字符串类型键的过期时间。
+> - persist 命令可以删除任意类型键的过期时间，但是 set 命令也会删除**字符串类型键**的过期时间。
 > - set 命令只会删除**字符串类型键**的过期时间。
 
 [Redis data types](https://redis.io/topics/data-types-intro)
