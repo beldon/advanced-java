@@ -1,5 +1,22 @@
 
 ## Redis 常用命令
+
+全局命令
+
+| 命令                | 描述           |
+| ------------------- | :------------- |
+| Keys *              | 查看所有命令   |
+| dbsize              | 查看键总数     |
+| exists key          | 查看键是否存在 |
+| del key             | 删除键         |
+| Expire key seconds  | 键过期         |
+| type key            | 键类型         |
+| object encoding key | 查看内部编码   |
+
+> [!TIP]
+> type 命令实际返回的是当前键的数据结构类型， object encoding 是查看内部编码。
+
+
 ```
 字符串：
         setnx(key,value)  只在键 key 不存在的情况下， 将键 key 的值设置为 value 。key存在,不做任何操作。
@@ -13,7 +30,7 @@
         hmset key field value [field value …] 同时将多个 field-value (域-值)对设置到哈希表 key 中。
         hget hash field  返回哈希表中给定域的值。
         hgetall key      返回哈希表 key 中，所有的域和值。
-å队列(queue):
+队列(queue):
         lpush key value [value …] 将一个或多个值 value 插入到列表 key 的表头
         lpop key   移除并返回列表 key 的头元素,不存在返回nil
         lset key index value  将列表 key 下标为 index 的元素的值设置为 value 。
@@ -31,17 +48,33 @@
         zrange key start stop [withscores]  返回有序集 key 中，指定区间内的成员(从小到大)。
         zrank key member  返回有序集 key 中成员 member 的排名。其中有序集成员按 score 值递增(从小到大)顺序排列。
         zrem key member [member …]   移除有序集 key 中的一个或多个成员，不存在的成员将被忽略。
-        时效性：
+时效性：
         expire(key,seconds) 为给定 key 设置生存时间，当 key 过期时(生存时间为 0 )，它会被自动删除。
         expireat( key,timestamp) 设置过期时间戳,expireatcache1355292000# 这个 key 将在 2012.12.12 过期
         ttl(key) 返回剩余时间
         persist key 移除key有效期，转换成永久的
-        数据指令：
+数据指令：
         keys pattern   符合给定模式的 key 列表。阻塞的
         scan  异步的  有重复
 ```
 
+> [!WARNING]
+> - persist 命令可以删除任意类型键的过期时间，但是 set 命令也会删除字符串类型键的过期时间。
+> - set 命令只会删除**字符串类型键**的过期时间。
+
 [Redis data types](https://redis.io/topics/data-types-intro)
+
+## 为什么单线程还能这么快
+
+> [!NOTE]
+> - 纯内存访问
+> - 非阻塞I/O（select/poll/epoll模型）
+> - 单线程避免了线程切换和竞态产生的消耗
+
+> [!WARNING]
+> 由于是单线程，所有 redis 对每个命令的执行时间是有要求的。如果某个命令执行过长，会造成其他命令的阻塞。
+
+![xx](./imgs/poll.png ':size=500')
 
 ## 最大缓存设置
 

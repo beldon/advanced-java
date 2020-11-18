@@ -10,6 +10,8 @@
 - Bitmaps
 - HyperLogLogs
 
+![xx](./imgs/data-types.png ':size=500x500')![xx](./imgs/data-types2.png ':size=500x500')
+
 ## 类型
 
 
