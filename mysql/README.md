@@ -8,3 +8,5 @@ Mysql
 - 锁
 
 [Mysql性能优化：什么是索引下推？](https://www.cnblogs.com/Chenjiabing/p/12600926.html)
+
+[MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)
