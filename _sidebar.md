@@ -24,6 +24,7 @@
   * [发布订阅](/redis/pubsub "发布订阅")
   * [分布式锁](/redis/distributed-locks "分布式锁")
   * [集群](/redis/replication "集群")
+  * [持久化](/redis/persistence "持久化")
 * [🌷MySql](/mysql/README "Mysql")
 * [🌹日志](/log/README "日志")
 * [🌺网络](/net/README "网络")
