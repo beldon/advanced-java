@@ -16,4 +16,5 @@ Mysql
 - [MySQL 8.0 Reference Manual](https://dev.mysql.com/doc/refman/8.0/en/)    
 - [数据库内核月报](http://mysql.taobao.org/monthly/)  
 - [MySQL Server Blog](https://mysqlserverteam.com/)
+- [推荐一些学习MySQL 进阶的书籍/资料](https://juejin.cn/post/6844904037016420359)
 
