@@ -1,0 +1,20 @@
+/*  
+ * Fix line number in code block. 
+ * Change this overflow attr to <pre> not the <code>.
+ */
+/* .markdown-section pre[data-lang] {
+    overflow: auto !important;
+}
+.markdown-section pre[data-lang] code {
+    overflow: visible;
+}
+
+.line-numbers .line-numbers-rows {
+    border-right : 2px solid white;
+    /* Fix paddings to align with code.*/
+    padding: 2.2em 0; /* Same as code block */
+} */
+
+p{
+	text-indent: 2em;
+}
