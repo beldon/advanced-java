@@ -1,5 +1,6 @@
 #!/bin/bash
 cd `dirname $0`
-git add .
-git commit -m "update"
+#git add .
+#git commit -m "update"
+git commit -a -m "update"
 git push
